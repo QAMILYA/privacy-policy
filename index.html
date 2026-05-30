@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — График смен</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f7fa;
+    color: #1A2E22;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  header {
+    background: linear-gradient(135deg, #0EBE73, #27AE60);
+    color: white;
+    padding: 48px 24px 40px;
+    text-align: center;
+  }
+
+  header .icon {
+    font-size: 52px;
+    margin-bottom: 12px;
+  }
+
+  header h1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+
+  header p {
+    font-size: 15px;
+    opacity: 0.85;
+  }
+
+  .meta-bar {
+    background: #ffffff;
+    border-bottom: 1px solid #e8f5ee;
+    padding: 12px 24px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #7B9E8A;
+    justify-content: center;
+  }
+
+  .meta-bar span strong { color: #1A2E22; }
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+  }
+
+  .section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(14,190,115,0.08);
+  }
+
+  .section h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0EBE73;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section h2 .num {
+    background: #0EBE73;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  p { margin-bottom: 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  .highlight {
+    background: #f0fdf4;
+    border-left: 4px solid #0EBE73;
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    margin: 16px 0;
+    font-weight: 600;
+    color: #1A2E22;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+
+  th {
+    background: #f0fdf4;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 700;
+    color: #0EBE73;
+    border-bottom: 2px solid #e8f5ee;
+  }
+
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f0f7f3;
+    vertical-align: top;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .badge-green { background: #e6f9f0; color: #0EBE73; }
+  .badge-red   { background: #fff0f0; color: #e74c3c; }
+
+  ul {
+    padding-left: 20px;
+    margin: 12px 0;
+  }
+
+  ul li {
+    margin-bottom: 8px;
+    padding-left: 4px;
+  }
+
+  ul li::marker { color: #0EBE73; }
+
+  .no-collect {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #fff0f0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+
+  .no-collect .x { font-size: 20px; flex-shrink: 0; }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: #7B9E8A;
+    font-size: 14px;
+    border-top: 1px solid #e8f5ee;
+  }
+
+  footer a { color: #0EBE73; text-decoration: none; }
+
+  @media (max-width: 600px) {
+    .section { padding: 20px 18px; }
+    header h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="icon">📅</div>
+  <h1>Политика конфиденциальности</h1>
+  <p>Приложение «График смен» — расписание рабочих смен</p>
+</header>
+
+<div class="meta-bar">
+  <span><strong>Разработчик:</strong> Южаков Илья</span>
+  <span><strong>Пакет:</strong> com.grafiksmen.app</span>
+  <span><strong>Платформа:</strong> Android 12+</span>
+  <span><strong>Версия документа:</strong> 1.0</span>
+  <span><strong>Дата:</strong> 2025 г.</span>
+</div>
+
+<div class="container">
+
+  <!-- 1. Общие положения -->
+  <div class="section">
+    <h2><span class="num">1</span> Общие положения</h2>
+    <p>Настоящая Политика конфиденциальности описывает, каким образом
+       приложение <strong>«График смен»</strong> (далее — «Приложение»)
+       обрабатывает данные пользователей.</p>
+    <p>Приложение предназначено для составления, хранения и просмотра
+       рабочего графика смен. Все функции работают исключительно на
+       устройстве пользователя.</p>
+    <div class="highlight">
+      🔒 Приложение не собирает, не хранит и не передаёт персональные
+      данные пользователей на какие-либо внешние серверы или третьим лицам.
+    </div>
+  </div>
+
+  <!-- 2. Какие данные используются -->
+  <div class="section">
+    <h2><span class="num">2</span> Данные, которые хранятся на устройстве</h2>
+    <p>Все данные, создаваемые в процессе использования Приложения,
+       хранятся <strong>только локально на устройстве</strong>
+       пользователя (SharedPreferences):</p>
+
+    <table>
+      <tr>
+        <th>Данные</th>
+        <th>Назначение</th>
+        <th>Передача</th>
+      </tr>
+      <tr>
+        <td>Даты начала и окончания графика</td>
+        <td>Расчёт рабочих смен</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td>Тип графика (2×2, 3×3 и др.)</td>
+        <td>Автоматический расчёт</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td>Рабочие и выходные дни (ручные правки)</td>
+        <td>Отображение в календаре</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td>Время и параметры напоминаний</td>
+        <td>Локальные уведомления</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td>Настройки темы оформления (цвета)</td>
+        <td>Внешний вид приложения</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td>Имена сотрудников (расширенная версия)</td>
+        <td>Общий календарь команды</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td>Флаг режима (стандартный / расширенный)</td>
+        <td>Управление функциями</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 3. Что приложение НЕ собирает -->
+  <div class="section">
+    <h2><span class="num">3</span> Что Приложение не собирает</h2>
+    <p>Приложение <strong>не собирает и не запрашивает</strong>:</p>
+
+    <div class="no-collect">
+      <span class="x">❌</span>
+      <span>Персональные данные (ФИО, дата рождения, адрес)</span>
+    </div>
+    <div class="no-collect">
+      <span class="x">❌</span>
+      <span>Контактные данные (телефон, email, мессенджеры)</span>
+    </div>
+    <div class="no-collect">
+      <span class="x">❌</span>
+      <span>Геолокацию и данные о местоположении</span>
+    </div>
+    <div class="no-collect">
+      <span class="x">❌</span>
+      <span>Данные об устройстве (IMEI, серийный номер, MAC-адрес)</span>
+    </div>
+    <div class="no-collect">
+      <span class="x">❌</span>
+      <span>Аналитику использования, статистику и метрики</span>
+    </div>
+    <div class="no-collect">
+      <span class="x">❌</span>
+      <span>Рекламные идентификаторы</span>
+    </div>
+    <div class="no-collect">
+      <span class="x">❌</span>
+      <span>Финансовые данные и данные банковских карт</span>
+    </div>
+    <div class="no-collect">
+      <span class="x">❌</span>
+      <span>Фотографии, камеру и медиафайлы</span>
+    </div>
+  </div>
+
+  <!-- 4. Разрешения -->
+  <div class="section">
+    <h2><span class="num">4</span> Запрашиваемые разрешения</h2>
+    <p>Приложение запрашивает следующие системные разрешения Android:</p>
+
+    <table>
+      <tr>
+        <th>Разрешение</th>
+        <th>Причина</th>
+        <th>Данные передаются?</th>
+      </tr>
+      <tr>
+        <td><code>POST_NOTIFICATIONS</code></td>
+        <td>Отправка напоминаний о рабочих сменах</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td><code>SCHEDULE_EXACT_ALARM</code></td>
+        <td>Точное планирование времени уведомлений</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td><code>USE_EXACT_ALARM</code></td>
+        <td>Точное планирование времени уведомлений</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+        <td>Восстановление напоминаний после перезагрузки</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td><code>RECORD_AUDIO</code></td>
+        <td>Голосовой ввод графика (по инициативе пользователя)</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td><code>VIBRATE</code></td>
+        <td>Вибрация при уведомлениях</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+      <tr>
+        <td><code>INTERNET</code></td>
+        <td>Отображение страницы политики конфиденциальности</td>
+        <td><span class="badge badge-red">Нет</span></td>
+      </tr>
+    </table>
+
+    <div class="highlight">
+      🎤 Разрешение на микрофон запрашивается только в момент,
+      когда пользователь сам нажимает кнопку голосового ввода.
+      Никакие аудиозаписи не сохраняются и не передаются.
+    </div>
+  </div>
+
+  <!-- 5. Третьи лица -->
+  <div class="section">
+    <h2><span class="num">5</span> Третьи лица и реклама</h2>
+    <p>Приложение <strong>не содержит рекламы</strong> и не использует
+       сторонние рекламные SDK (AdMob, YandexAds и др.).</p>
+    <p>Приложение <strong>не интегрировано</strong> с аналитическими
+       сервисами (Firebase Analytics, AppMetrica, Mixpanel и др.).</p>
+    <p>Приложение <strong>не передаёт</strong> никакие данные
+       третьим лицам, партнёрам или государственным органам
+       (за исключением случаев, прямо предусмотренных законодательством
+       Российской Федерации).</p>
+  </div>
+
+  <!-- 6. Хранение и удаление -->
+  <div class="section">
+    <h2><span class="num">6</span> Хранение и удаление данных</h2>
+    <p>Все данные хранятся в локальном хранилище приложения
+       на устройстве пользователя.</p>
+    <p><strong>Данные удаляются автоматически</strong> при удалении
+       Приложения с устройства.</p>
+    <p>Пользователь может очистить все данные вручную двумя способами:</p>
+    <ul>
+      <li>Через кнопку «Сброс» в самом Приложении</li>
+      <li>Через настройки Android: <em>Настройки → Приложения →
+          График смен → Хранилище → Очистить данные</em></li>
+    </ul>
+    <p>Резервное копирование данных в облако отключено
+       (<code>android:allowBackup="false"</code>) для обеспечения
+       конфиденциальности пользователя.</p>
+  </div>
+
+  <!-- 7. Дети -->
+  <div class="section">
+    <h2><span class="num">7</span> Защита данных детей</h2>
+    <p>Приложение имеет возрастной рейтинг <strong>0+</strong>
+       и не предназначено для сбора данных о лицах младше 18 лет.</p>
+    <p>Приложение не собирает никаких данных ни о детях,
+       ни о взрослых пользователях.</p>
+  </div>
+
+  <!-- 8. Безопасность -->
+  <div class="section">
+    <h2><span class="num">8</span> Безопасность</h2>
+    <p>Поскольку Приложение не передаёт данные за пределы устройства,
+       риск утечки данных через сетевые каналы полностью исключён.</p>
+    <p>Сетевой трафик Приложения ограничен политикой
+       Network Security Config — разрешён только HTTPS,
+       HTTP-трафик запрещён.</p>
+    <p>Безопасность данных на самом устройстве обеспечивается
+       стандартными механизмами защиты Android.</p>
+  </div>
+
+  <!-- 9. Изменения -->
+  <div class="section">
+    <h2><span class="num">9</span> Изменения политики</h2>
+    <p>Разработчик оставляет за собой право вносить изменения
+       в настоящую Политику конфиденциальности.</p>
+    <p>При существенных изменениях пользователи будут уведомлены
+       через обновление Приложения в магазине приложений.</p>
+    <p>Актуальная версия Политики всегда доступна по постоянной ссылке,
+       указанной в описании Приложения в магазине.</p>
+  </div>
+
+  <!-- 10. Контакты -->
+  <div class="section">
+    <h2><span class="num">10</span> Контактная информация</h2>
+    <p>По всем вопросам, связанным с конфиденциальностью данных,
+       обращайтесь к разработчику:</p>
+    <table>
+      <tr>
+        <td><strong>Разработчик</strong></td>
+        <td>Южаков Илья</td>
+      </tr>
+      <tr>
+        <td><strong>Email</strong></td>
+        <td><a href="mailto:grafik.smen.app@gmail.com"
+               style="color:#0EBE73">grafik.smen.app@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td><strong>Приложение</strong></td>
+        <td>График смен</td>
+      </tr>
+      <tr>
+        <td><strong>Пакет</strong></td>
+        <td>com.grafiksmen.app</td>
+      </tr>
+      <tr>
+        <td><strong>Платформа</strong></td>
+        <td>Android 12 и выше</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 «График смен» — Южаков Илья</p>
+  <p style="margin-top:8px; font-size:13px;">
+    Политика конфиденциальности актуальна с момента публикации Приложения.<br>
+    Приложение не собирает персональные данные. Все данные хранятся только на устройстве пользователя.
+  </p>
+</footer>
+
+</body>
+</html>
